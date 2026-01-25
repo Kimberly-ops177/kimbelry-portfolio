@@ -36,8 +36,8 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          Passionate about building scalable solutions
+          <br /> and analyzing data-driven insights
         </p>
         <hr />
       </motion.div>
@@ -45,14 +45,14 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{color:"orange"}}>Education</motion.b> &
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{color:"orange"}}>Experience</motion.b>
           </h1>
-          <button>WHAT WE DO?</button>
+          <button>MY JOURNEY</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -60,53 +60,61 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>PLP Academy</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Software Development Program
+            <br />
+            July - December 2025
+            <br />
+            <br />
+            Completed comprehensive training in software development, learning modern web technologies, best practices, and agile methodologies.
           </p>
-          <button>Go</button>
+          <button>Education</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>ALX</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Data Engineering Program
+            <br />
+            February - December 2025
+            <br />
+            <br />
+            Specialized training in data engineering, covering data pipelines, ETL processes, database management, and big data technologies.
           </p>
-          <button>Go</button>
+          <button>Education</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>The Jitu</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Fullstack Developer
+            <br />
+            September 2025 - January 2026
+            <br />
+            <br />
+            Developed end-to-end web applications using modern frameworks and technologies, collaborating with cross-functional teams to deliver high-quality solutions.
           </p>
-          <button>Go</button>
+          <button>Experience</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Codsoft</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Software Developer
+            <br />
+            December 2025 - Present
+            <br />
+            <br />
+            Currently contributing to innovative software projects, implementing features, and maintaining codebases with focus on quality and performance.
           </p>
-          <button>Go</button>
+          <button>Experience</button>
         </motion.div>
       </motion.div>
     </motion.div>
