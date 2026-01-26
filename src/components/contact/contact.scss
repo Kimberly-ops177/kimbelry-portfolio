@@ -1,89 +1,211 @@
 @import "../../app.scss";
 
-.contact {
-  height: 100%;
-  max-width: 1366px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 50px;
+.contact-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0e27 0%, #151a35 100%);
+  padding: 120px 60px 60px;
+  position: relative;
 
-  @include mobile {
-    width: 100%;
-    padding: 10px;
-    flex-direction: column;
+  @media (max-width: 768px) {
+    padding: 100px 20px 40px;
   }
 
-  .textContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  .contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
 
-    @include mobile {
-      gap: 20px;
-      text-align: center;
-      align-items: center;
-      margin-top: 70px;
-    }
+    .header-section {
+      margin-bottom: 60px;
 
-    h1 {
-      font-size: 100px;
-      line-height: 88px;
-
-      @include mobile {
-        font-size: 36px;
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
       }
-    }
 
-    span {
-      font-weight: 300;
-    }
-  }
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 12px;
 
-  .formContainer {
-    flex: 1;
-    position: relative;
-    
-    @include mobile {
-      padding: 50px;
-      width: 100%;
-    }
-
-
-    .phoneSvg {
-      stroke: orange;
-      position: absolute;
-      margin: auto;
-      z-index: -1;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-
-      input,
-      textarea {
-        padding: 20px;
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-        border-radius: 5px;
-
-        @include mobile {
-          padding: 10px;
+        @media (max-width: 768px) {
+          font-size: 32px;
         }
       }
 
-      button {
-        padding: 20px;
-        border: none;
-        background-color: orange;
-        cursor: pointer;
-        font-weight: 500;
-        @include mobile {
-          padding: 10px;
+      p {
+        font-size: 16px;
+        color: #a0a0b0;
+        max-width: 600px;
+      }
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+
+      @media (max-width: 968px) {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .form-section {
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+          color: #ffffff;
+          margin-bottom: 30px;
+        }
+
+        form {
+          .form-group {
+            margin-bottom: 20px;
+
+            label {
+              display: block;
+              font-size: 14px;
+              font-weight: 500;
+              color: #ffffff;
+              margin-bottom: 8px;
+            }
+
+            input,
+            textarea {
+              width: 100%;
+              padding: 12px 16px;
+              background: rgba(15, 20, 40, 0.8);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              border-radius: 8px;
+              color: #ffffff;
+              font-size: 14px;
+              font-family: inherit;
+              transition: all 0.3s ease;
+
+              &::placeholder {
+                color: #70708a;
+              }
+
+              &:focus {
+                outline: none;
+                border-color: #00e6ff;
+                background: rgba(15, 20, 40, 0.95);
+              }
+            }
+
+            textarea {
+              resize: vertical;
+              min-height: 100px;
+            }
+          }
+
+          .submit-btn {
+            width: 100%;
+            padding: 14px 24px;
+            background: linear-gradient(90deg, #00e6ff, #00b8d9);
+            border: none;
+            border-radius: 8px;
+            color: #0a0e27;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+
+            &:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 8px 20px rgba(0, 230, 255, 0.3);
+            }
+          }
+
+          .message {
+            margin-top: 16px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+
+            &.success-message {
+              background: rgba(40, 202, 66, 0.1);
+              border: 1px solid rgba(40, 202, 66, 0.3);
+              color: #28ca42;
+            }
+
+            &.error-message {
+              background: rgba(255, 95, 87, 0.1);
+              border: 1px solid rgba(255, 95, 87, 0.3);
+              color: #ff5f57;
+            }
+          }
+        }
+      }
+
+      .info-section {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+
+        .info-block {
+          h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 16px;
+          }
+
+          .info-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: #a0a0b0;
+            font-size: 14px;
+
+            svg {
+              width: 20px;
+              height: 20px;
+              color: #00e6ff;
+              flex-shrink: 0;
+            }
+
+            span {
+              word-break: break-word;
+            }
+          }
+
+          .social-links {
+            display: flex;
+            gap: 12px;
+
+            .social-link {
+              width: 44px;
+              height: 44px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: rgba(15, 20, 40, 0.8);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              border-radius: 8px;
+              color: #a0a0b0;
+              transition: all 0.3s ease;
+
+              &:hover {
+                background: rgba(0, 230, 255, 0.1);
+                border-color: #00e6ff;
+                color: #00e6ff;
+                transform: translateY(-3px);
+              }
+
+              svg {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+
+          .availability-text {
+            font-size: 14px;
+            color: #a0a0b0;
+            line-height: 1.6;
+          }
         }
       }
     }

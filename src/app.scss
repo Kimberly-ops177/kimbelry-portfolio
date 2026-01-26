@@ -1,5 +1,4 @@
 html {
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -7,12 +6,17 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body {
-  background-color: #0c0c1d;
-  color: lightgray;
+  background: linear-gradient(135deg, #0a0e27 0%, #151a35 100%);
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
 }
 
 a {
@@ -21,10 +25,9 @@ a {
 }
 
 section {
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-align: center;
-  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
 @mixin mobile {
