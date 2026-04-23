@@ -19,7 +19,7 @@ const items = [
     tech: ["PHP", "MySQL", "JavaScript", "Bootstrap", "REST API"],
     live: true,
     liveUrl: "#",
-    sourceUrl: "#"
+    sourceUrl: "https://github.com/Kimberly-ops177/Inventory_Management_System"
   },
   {
     id: 3,
@@ -27,8 +27,8 @@ const items = [
     desc: "Developed an AI-powered mental wellness companion using Python and TensorFlow. The platform analyzes user journal entries through sentiment analysis, provides personalized coping strategies, tracks mood patterns over time, and offers evidence-based mindfulness exercises.",
     tech: ["Python", "TensorFlow", "NLP", "Flask", "PostgreSQL"],
     live: true,
-    liveUrl: "#",
-    sourceUrl: "#"
+    liveUrl: "https://mindvibe-ai.netlify.app",
+    sourceUrl: "https://github.com/Kimberly-ops177/MindVibe-AI"
   },
   {
     id: 4,
@@ -36,8 +36,8 @@ const items = [
     desc: "Created a tech course learning portal using React and Node.js for online programming bootcamps. Features include video course hosting, coding challenges with automated testing, progress tracking, certificate generation, and a discussion forum for student collaboration.",
     tech: ["React", "Node.js", "MongoDB", "Express", "AWS"],
     live: true,
-    liveUrl: "#",
-    sourceUrl: "#"
+    liveUrl: "https://final-project-kimberly.vercel.app/",
+    sourceUrl: "https://github.com/Kimberly-ops177/EduHub-Learning-Platform"
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const items = [
     tech: ["React", "Node.js", "MongoDB", "Express", "M-Pesa API"],
     live: true,
     liveUrl: "#",
-    sourceUrl: "#"
+    sourceUrl: "https://github.com/Kimberly-ops177/CodeAlpha_Ecommerce-Store"
   },
   {
     id: 6,
@@ -54,8 +54,8 @@ const items = [
     desc: "Built a collaborative project tracker using React and Firebase for remote development teams. The tool supports sprint planning with drag-and-drop task boards, time logging, team member assignments, deadline notifications, and project milestone visualization through Gantt charts.",
     tech: ["React", "Firebase", "Redux", "Material-UI"],
     live: true,
-    liveUrl: "#",
-    sourceUrl: "#"
+    liveUrl: "https://my-task-manager-opal.vercel.app/",
+    sourceUrl: "https://github.com/Kimberly-ops177/task-manager-mern"
   },
   {
     id: 7,
@@ -64,55 +64,73 @@ const items = [
     tech: ["Socket.io", "Express", "React", "Node.js", "MongoDB"],
     live: true,
     liveUrl: "#",
-    sourceUrl: "#"
+    sourceUrl: "https://github.com/PLP-MERN-Stack-Development/real-time-communication-with-socket-io-Kimberly-ops177"
   },
   {
     id: 8,
+    title: "EarthReGen",
+    desc: "Built a land regeneration platform during the Land ReGen Hackathon 2025. Connects landowners, conservationists, and volunteers to restore degraded ecosystems. Features include project mapping, volunteer coordination, and real-time environmental impact tracking.",
+    tech: ["React", "Supabase", "Claude API", "Mapbox"],
+    live: true,
+    liveUrl: "https://earth-re-gen.vercel.app/",
+    sourceUrl: "https://github.com/Kimberly-ops177/EarthReGen"
+  },
+  {
+    id: 9,
+    title: "BuildOrDie",
+    desc: "A developer accountability platform built on the MERN stack. Developers publicly commit to shipping projects within a deadline or face consequences — gamifying productivity through social accountability, streak tracking, and community challenges.",
+    tech: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
+    live: true,
+    liveUrl: "https://buildordie.vercel.app/",
+    sourceUrl: "https://github.com/Kimberly-ops177/buildordie"
+  },
+  {
+    id: 10,
     title: "Dockerized Web Server",
     desc: "Containerized a multi-tier web application using Docker Compose with separate containers for Nginx, Node.js backend, and PostgreSQL database. Set up volume persistence, networking between containers, and environment-based configuration for development and production environments.",
     tech: ["Docker", "Docker Compose", "Nginx", "PostgreSQL", "Node.js"],
     live: false,
     liveUrl: null,
-    sourceUrl: "#"
+    sourceUrl: "https://github.com/Kimberly-ops177/customer-management"
   },
   {
-    id: 9,
+    id: 11,
     title: "Java Application with Gradle",
     desc: "Built a customer management system using Java Spring Boot and Gradle for build automation. The application includes REST APIs for CRUD operations, JUnit tests with 80% code coverage, automated dependency management, and multi-module project structure for better code organization.",
     tech: ["Java", "Spring Boot", "Gradle", "JUnit", "PostgreSQL"],
     live: false,
     liveUrl: null,
-    sourceUrl: "#"
+    sourceUrl: "https://github.com/Kimberly-ops177/customer-management"
   },
   {
-    id: 10,
+    id: 12,
     title: "Jenkins Remoting Project",
     desc: "Configured a distributed Jenkins build environment with master-agent architecture to parallelize build jobs across multiple machines. Set up SSH-based agent connections, job distribution logic, and resource monitoring to reduce build times by 60% for large Java projects.",
     tech: ["Jenkins", "Java", "Docker", "SSH", "Monitoring"],
     live: false,
     liveUrl: null,
-    sourceUrl: "#"
+    sourceUrl: "https://github.com/Kimberly-ops177/customer-management"
   },
   {
-    id: 11,
+    id: 13,
     title: "CI/CD Pipeline with Jenkins",
     desc: "Designed an automated CI/CD pipeline using Jenkins for a Node.js application. The pipeline runs unit tests, performs SonarQube code quality analysis, builds Docker images, pushes to DockerHub, and deploys to AWS EC2 staging and production servers with approval gates.",
     tech: ["Jenkins", "Docker", "SonarQube", "AWS EC2", "Node.js"],
     live: false,
     liveUrl: null,
-    sourceUrl: "#"
+    sourceUrl: "https://github.com/Kimberly-ops177/customer-management"
   },
   {
-    id: 12,
+    id: 14,
     title: "Kubernetes Cluster Deployment",
     desc: "Deployed a production-ready K8s cluster on AWS using kubeadm with 3 master nodes and 5 worker nodes. Configured horizontal pod autoscaling based on CPU metrics, set up ingress controllers for traffic routing, implemented persistent volumes for stateful applications, and integrated Prometheus for monitoring.",
     tech: ["Kubernetes", "AWS", "Prometheus", "Docker", "Helm"],
     live: false,
     liveUrl: null,
-    sourceUrl: "#"
+    sourceUrl: "https://github.com/Kimberly-ops177/customer-management"
   },
   {
-    id: 13,
+    id: 15,
     title: "Microservices Architecture",
     desc: "Architected a microservices-based e-commerce backend using Node.js with separate services for authentication, products, orders, and payments. Implemented API Gateway with Kong, service discovery using Consul, RabbitMQ for async messaging, and distributed tracing with Jaeger.",
     tech: ["Node.js", "Kong", "RabbitMQ", "Consul", "Jaeger"],
@@ -121,7 +139,7 @@ const items = [
     sourceUrl: "#"
   },
   {
-    id: 14,
+    id: 16,
     title: "Infrastructure as Code with Terraform",
     desc: "Automated AWS infrastructure provisioning using Terraform to deploy VPC, EC2 instances, RDS databases, S3 buckets, and load balancers. Created reusable modules for different environments, implemented remote state management with S3 backend, and set up automated backup policies.",
     tech: ["Terraform", "AWS", "VPC", "EC2", "RDS"],
@@ -130,7 +148,7 @@ const items = [
     sourceUrl: "#"
   },
   {
-    id: 15,
+    id: 17,
     title: "Monitoring & Observability Platform",
     desc: "Set up a comprehensive monitoring stack with Prometheus for metrics collection, Grafana for visualization, and ELK stack for centralized logging. Created custom dashboards for application performance, configured alerting rules for critical thresholds, and implemented log parsing for error tracking.",
     tech: ["Prometheus", "Grafana", "ELK Stack", "Docker", "Alerting"],
@@ -139,7 +157,7 @@ const items = [
     sourceUrl: "#"
   },
   {
-    id: 16,
+    id: 18,
     title: "Serverless Application on AWS",
     desc: "Built a serverless image processing service using AWS Lambda triggered by S3 uploads. The Lambda function resizes images, generates thumbnails, extracts metadata, stores results in DynamoDB, and sends notifications via SNS. Reduced infrastructure costs by 70% compared to traditional EC2 hosting.",
     tech: ["AWS Lambda", "S3", "DynamoDB", "SNS", "Python"],
@@ -148,7 +166,7 @@ const items = [
     sourceUrl: "#"
   },
   {
-    id: 17,
+    id: 19,
     title: "Automated Testing Framework",
     desc: "Developed a comprehensive testing suite for a React web application using Jest for unit tests, React Testing Library for component tests, and Cypress for end-to-end testing. Integrated with GitHub Actions to run tests automatically on every pull request with detailed coverage reports.",
     tech: ["Jest", "Cypress", "React Testing Library", "GitHub Actions"],
@@ -157,7 +175,7 @@ const items = [
     sourceUrl: "#"
   },
   {
-    id: 18,
+    id: 20,
     title: "GitOps Workflow with ArgoCD",
     desc: "Implemented GitOps deployment workflow using ArgoCD to manage Kubernetes applications across dev, staging, and production environments. Configured automated sync from Git repositories, set up rollback mechanisms for failed deployments, and created approval workflows for production releases.",
     tech: ["ArgoCD", "Kubernetes", "Git", "Helm", "CI/CD"],
@@ -166,7 +184,7 @@ const items = [
     sourceUrl: "#"
   },
   {
-    id: 19,
+    id: 21,
     title: "Data Analytics Dashboard",
     desc: "Built an interactive sales analytics dashboard using React and D3.js for a retail business. The dashboard visualizes revenue trends, product performance, customer demographics, and regional sales data with drill-down capabilities, real-time updates via WebSocket, and exportable PDF reports.",
     tech: ["React", "D3.js", "WebSocket", "Python", "PostgreSQL"],
@@ -175,7 +193,7 @@ const items = [
     sourceUrl: "#"
   },
   {
-    id: 20,
+    id: 22,
     title: "API Gateway & Service Mesh",
     desc: "Configured Kong API Gateway to handle authentication, rate limiting (100 req/min), request transformation, and routing for 15+ microservices. Implemented Istio service mesh for traffic management, circuit breaking to prevent cascade failures, mTLS for service-to-service encryption, and distributed tracing.",
     tech: ["Kong", "Istio", "Kubernetes", "Docker", "Microservices"],
